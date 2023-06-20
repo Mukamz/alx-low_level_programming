@@ -1,12 +1,32 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * add-adds two integers
- * @a:first parameter
- * @b:second parameter
- * Return: a + b
+ * print_to_98-prints to 98
+ * @n: Starting digit
  */
-int add(int a, int b)
+void print_to_98(int n)
 {
-	return (a + b);
+	if (n <= 98)
+	{
+		while (n <= 98)
+		{
+			if (n == 98)
+				printf("%d\n", n);
+			else
+				printf("%d, ", n);
+			n = n + 1;
+		}
+
+		} else if (n > 98)
+		{
+			while (n >= 98)
+			{
+				if (n == 98)
+					printf("%d\n", n);
+				else
+					printf("%d, ", n);
+				n = n - 1;
+			}
+		}
 }
