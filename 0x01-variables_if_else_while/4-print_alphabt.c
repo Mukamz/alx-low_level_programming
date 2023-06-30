@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int ch = 99;
+	int ch = 97;
 
 	while (ch <= 122)
 	{
