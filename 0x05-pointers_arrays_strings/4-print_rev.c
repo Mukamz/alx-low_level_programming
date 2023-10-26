@@ -6,18 +6,13 @@
  */
 void print_rev(char *s)
 {
-	int l;
-        char ch;
-        char s1[]; 
-	fgets(s1, sizeof(s1), stdin);
-        l = strlen(s1);
+        int len = 0, i = 0;
 
+        while (s[i++])
+                len++;
 
-        for (int i = 0; i < l / 2; i++)
-        {
-                ch = s1[i];
-                s1[i] = s1[l - 1 - i];
-                s1[l -1 -i] = ch;
-        }
-        printf("%s\n", s1);
+        for (i = len - 1; i >= 0; i--)
+                _putchar(s[i]);
+
+        _putchar('\n');
 }
