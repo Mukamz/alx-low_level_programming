@@ -8,7 +8,7 @@ void print_rev(char *s)
 {
 	int l;
         char ch;
-        char s1[] =;
+        char s1[]; 
 	fgets(s1, sizeof(s1), stdin);
         l = strlen(s1);
 
